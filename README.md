@@ -7,7 +7,7 @@
   5. Salaries dataset with emp_no, salary, from_date, to_date
   6. Titles dataset with emp_no, title,from_date, and to_date fields
 
-In addition to multiple analyses and queries already performed in the module, we were asked to provide additiona queries to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. We are then to write a report that summarizes our analysis that will hopefully help prepare the company plan for the "silver tsunami" as many current employees reach retirement age. 
+In addition to multiple analyses and queries already performed in the module, we were asked to provide additional queries to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. We are then to write a report that summarizes our analysis that will hopefully help prepare the company plan for the "silver tsunami" as many current employees reach retirement age. 
 
 ## Requirements and Details of the Analysis
 
@@ -40,19 +40,19 @@ In addition to multiple analyses and queries already performed in the module, we
 
 ## Results of the Analysis
 
-1. There were 72,458 total employees who are eligible for retirement based on the birth date criteria, which is the potential amount of positions we will need to fill
+1. There were 72,458 total employees who are eligible for retirement based on the birth date criteria, which is the potential amount of positions we will need to fill.
 
 
 2. The breakdown of the retirees by position/title is below:
 
 <img width="222" alt="Screen Shot 2022-04-10 at 4 12 55 PM" src="https://user-images.githubusercontent.com/98235755/162637993-7b05db88-fce6-4958-91d9-c024a193632a.png">
 
-3. The query on the number of eligible employees being eligible for mentorship program (criteria based on being born in 1965) only returned 1549 employees. Below is the breakdown by position. 
+3. The query on the number of employees being eligible for mentorship program (criteria based on being born in 1965) only returned 1549 employees. Below is the breakdown by position. 
 
 <img width="219" alt="Screen Shot 2022-04-10 at 4 20 44 PM" src="https://user-images.githubusercontent.com/98235755/162638242-d0168786-f908-4f86-9f14-8af778447613.png">
 
-4. Summary: Based on the above findings, it is clearly not enough qualified, retirement-ready employees to mentor the next generation of PH. Preparation-wise, I think it would be worth looking into the mentorship eligibility (e.g. adjusting the age limit), offering retiring age employees some casual hours (or asking for consultative service) to provide mentorship to the next generation or even evaluating the positions if whether or not they need to be filled or if some FTEs could be distributed to those with capacities. 
+4. Summary: Based on the above findings, it is clearly not enough qualified, retirement-ready employees to mentor the next generation of PH. Preparation-wise, I think it would be worth looking into the mentorship eligibility (ie. adjusting the age limit), offering retiring age employees some casual hours (for consultative service) to provide mentorship to the next generation or even evaluating the positions if those retiring if whether or not they need to be filled or if some FTEs could be distributed to those with capacities. 
 
-Moreover, an additional information I would look at is the breakdown of the retirement-eligible employees by dept and by position to see an impact to each dept and perhaps help figure out which deparment/position will need to get prioritized as we recruit or train new employees. Below shows a section of the retiring employees total by dept and by title. The file is also saved in the Data folder. 
+Moreover, an additional information I would look at is the breakdown of the retirement-eligible employees by dept and by position to see an impact to each dept and perhaps help figure out which deparment/position will need to get prioritized as we recruit and train new employees. Below shows a section of the retiring employees total by dept and by title. The file is also saved in the Data folder. 
 
 <img width="360" alt="Screen Shot 2022-04-10 at 4 53 41 PM" src="https://user-images.githubusercontent.com/98235755/162639409-01af16a9-6f0a-48fe-b073-0d597e8d9f07.png">
