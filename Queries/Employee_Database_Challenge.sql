@@ -55,3 +55,35 @@ SELECT COUNT(me.emp_no), me.title
 FROM mentorship_eligibility as me
 GROUP BY me.title
 ORDER BY COUNT DESC
+
+--CREATING A NEW RETIREMENT TABLE BY TITLE AND BY DEPARTMENT
+SELECT DISTINCT ON (e.emp_no)
+e.emp_no,
+    e.first_name,
+e.last_name,
+e.birth_date,
+de.from_date,
+de.to_date,
+dep.dept_name,
+ti.title
+INTO retirement_by_dept
+FROM employees as e
+LEFT JOIN dept_emp as de
+ON e.emp_no = de.emp_no
+left join departments as dep
+on de.dept_no = dep.dept_no
+left JOIN titles as ti
+On e.emp_no = ti.emp_no
+WHERE de.to_date = '9999-01-01' 
+AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY e.emp_no;
+
+-- TOTAL employees (WHO ARE ABOUT TO RETIRE) by their most recent AND BY DEPT AB BY TITLE
+-- Number of employees by their most recent job title by dept who are about 
+--to retire and new table
+SELECT COUNT(rbd.emp_no),
+rbd.title, rbd.dept_name
+INTO Retiring_by_dept_by_title
+FROM retirement_by_dept as rbd
+GROUP BY rbd.dept_name, rbd.title
+order by rbd.dept_name DESC
